@@ -1,6 +1,6 @@
 <div>
     <div>
-        <input type="checkbox" [checked]="item.completed">
+        <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
         {{item.title}}
     </div>
     <div>
